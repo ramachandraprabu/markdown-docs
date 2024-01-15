@@ -1,0 +1,34 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<router-outlet></router-outlet>
+
+<div class="docs-container">
+  <div class="docs-wpr">
+    <div class="docs-sidenav">
+      <div class="source-tree">
+        <ul ng2v-tree class="ng2v-tree-content"
+            [data]="treeJson" 
+            [children]="'children'">
+        </ul>
+      </div>
+    </div>
+    <div class="docs-content">
+      <div class="markdown" #markdown [innerHTML]="snippets|markdown"></div>  
+    </div>
+   <div class="docs-mobile">
+      <div class="docs-mobile__device"> 
+       <!-- <div class="doc-button-group">
+          <span class="doc-button" [class.doc-button--active]="activeDevice==='ios'" (click)="activate('ios')">
+            <p class="doc-button--label">iOS</p>
+          </span>
+          <span class="doc-button" [class.doc-button--active]="activeDevice==='android'" (click)="activate('android')">
+            <p class="doc-button--label">Android</p>
+          </span>
+        </div> -->
+       <!-- <div id="anchor-container" [attr.style]="getStyle()">
+          <img id="anchor-image" [attr.src]="demoUrl">
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>

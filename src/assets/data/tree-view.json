@@ -1,0 +1,39 @@
+{
+  "path": "./docs",
+  "name": "docs",
+  "type": "folder",
+  "children": [
+    {
+      "path": "./docs/file-1.md",
+      "name": "file-1.md",
+      "type": "file"
+    },
+    {
+      "path": "./docs/file-2.md",
+      "name": "file-2.md",
+      "type": "file"
+    },
+    {
+      "path": "./docs/file-3.md",
+      "name": "file-3.md",
+      "type": "file"
+    },
+    {
+      "path": "./docs/folder-1",
+      "name": "folder-1",
+      "type": "folder",
+      "children": [
+        {
+          "path": "./docs/folder-1/file-1.1.md",
+          "name": "file-1.1.md",
+          "type": "file"
+        },
+        {
+          "path": "./docs/folder-1/file-1.2.md",
+          "name": "file-1.2.md",
+          "type": "file"
+        }
+      ]
+    }
+  ]
+}
